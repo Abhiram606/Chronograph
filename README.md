@@ -27,7 +27,7 @@
 > 3. Compile the code using a C compiler such as GCC (GNU Compiler Collection) or any other compilers.
 > 4. Do the necessary [customizations](https://github.com/karts13/Chronograph/blob/main/README.md#customization).
 > 5. After successful compilation, an executable file named `chrono` will be generated. Run the compiled executable
-> 6. Upon running the program, a menu will be displayed with three options shown in .....
+> 6. Upon running the program, a menu will be displayed with three options shown in [Output 2](https://github.com/karts13/Chronograph/blob/main/README.md#sample-outputs).
 > 7. Enter the number corresponding to your desired functionality and press Enter.
 > 8. Follow the prompts for each selected functionality as described in the previous instructions:
 >    * For the Timer, input the countdown duration and interact with the timer using 'p', 'r', and 's' keys.
