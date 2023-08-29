@@ -25,7 +25,7 @@
 > 1. Create a new text file with a ".c" extension, e.g., `chrono.c`.
 > 2. Copy the code from [chrono.c](https://github.com/karts13/Chronograph/blob/main/chrono.c) repository and paste it into the text editor.
 > 3. Compile the code using a C compiler such as GCC (GNU Compiler Collection) or any other compilers.
-> 4. Do the necessary [customizations](https://github.com/brcnitk/Internship-Feb_2023/blob/main/Karthik_Shenoy/README.md#customization).
+> 4. Do the necessary [customizations](https://github.com/karts13/Chronograph/blob/main/README.md#customization).
 > 5. After successful compilation, an executable file named `chrono` will be generated. Run the compiled executable
 > 6. Upon running the program, a menu will be displayed with three options shown in .....
 > 7. Enter the number corresponding to your desired functionality and press Enter.
