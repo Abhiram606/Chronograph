@@ -1,4 +1,4 @@
-![Screenshot 2023-08-29 184920](https://github.com/karts13/Chronograph/assets/126340629/0136263a-15b4-4a0a-91c2-117fbf881004)## Personal details
+## Personal details
 
 > **Name:** A Karthik Shneoy
 > 
