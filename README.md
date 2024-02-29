@@ -13,13 +13,13 @@
 > 1. Clone the Repository:
 >    ```
 >    git clone https://github.com/karts13/Chronograph.git
->    cd chrono
+>    cd Chronograph
 >    ```
 > 2. Do the necessary [customizations](https://github.com/karts13/Chronograph/blob/main/README.md#customization).
 > 3. Compile the Code:
 >    ```
 >    gcc chrono.c -o chrono
->    '''
+>    ```
 > 4. After successful compilation, an executable file named `chrono` will be generated. Run the compiled executable
 >    ```
 >    ./chrono
