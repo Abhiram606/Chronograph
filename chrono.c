@@ -90,27 +90,27 @@ void worldClock(char* timezone)
     time_t now;
 
     // Determine the hour and minute offset based on the selected timezone
-    if (strcmp(timezone, "IST") == 0)
+    if (strcmp(timezone, "IST") == 0 || strcmp(timezone, "ist") == 0)
     {
         hour_offset = 0; //Assume local time is IST
         minute_offset = 0;
     }
-    else if (strcmp(timezone, "EST") == 0)
+    else if (strcmp(timezone, "EST") == 0 || strcmp(timezone, "est") == 0)
     {
         hour_offset = -9;
         minute_offset = -30;
     }
-    else if (strcmp(timezone, "CST") == 0)
+    else if (strcmp(timezone, "CST") == 0 || strcmp(timezone, "cst") == 0)
     {
         hour_offset = -10;
         minute_offset = -30;
     }
-    else if (strcmp(timezone, "MST") == 0)
+    else if (strcmp(timezone, "MST") == 0 || strcmp(timezone, "mst") == 0)
     {
         hour_offset = -11;
         minute_offset = -30;
     }
-    else if (strcmp(timezone, "PST") == 0)
+    else if (strcmp(timezone, "PST") == 0 || strcmp(timezone, "pst") == 0)
     {
         hour_offset = -12;
         minute_offset = -30;
@@ -142,7 +142,7 @@ void worldClock(char* timezone)
 
 // Function to display the stopwatch and timestamps
 void Stopwatch(int hours, int minutes, int seconds)
-{
+{   
     system("cls");
     printf("%02d:%02d:%02d\n", hours, minutes, seconds);
     for (int i = 0; i < timestampCount; i++) {
@@ -274,17 +274,21 @@ int main()
             worldClock(timezone);
             break;
 
-        case 3: // Stopwatch functionality
+case 3: // Stopwatch functionality
 
-            // Initial display of the stopwatch
-            Stopwatch(lastShownHours, lastShownMinutes, lastShownSeconds);
-            while (1)
-            {
-                // Continuously update the stopwatch and handle user input
-                UpdateStopwatch();
-                HandleInput();
-            }
-            break;
+  // Initial display of the stopwatch
+  Stopwatch(lastShownHours, lastShownMinutes, lastShownSeconds);
+
+  // Print instructions for stopwatch controls
+  printf("Press 'p' to pause, 'r' to resume, and 's' to restart.\n");
+
+  while (1) {
+    // Continuously update the stopwatch and handle user input
+    UpdateStopwatch();
+    HandleInput();
+  }
+  break;
+
 
         default:
             // Invalid choice
