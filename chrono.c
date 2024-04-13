@@ -164,9 +164,9 @@ void PrintTimestamp(int hours, int minutes, int seconds)
 // Function to handle user input (pausing, resuming, resetting, and adding timestamps)
 void HandleInput()
 {
-    if (_kbhit()) {
-        char key = _getch();
-        if (key == 'p' || key == 'P')
+    if (_kbhit()) {                // Check if a key has been pressed
+        char key = _getch();  
+        if (key == 'p' || key == 'P')     // Check if the pressed key is 'p' or 'P' (for pause)
         {
             if (!paused)
             {
